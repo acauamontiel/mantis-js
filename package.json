@@ -1,0 +1,39 @@
+{
+  "name": "mantis-js",
+  "version": "0.0.0",
+  "description": "JavaScript library for DOM manipulation",
+  "main": "mantis.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "colors": "^1.0.2",
+    "gulp": "^3.8.8",
+    "gulp-connect": "^2.0.6",
+    "gulp-include": "^1.1.1",
+    "gulp-js-prettify": "^0.1.0",
+    "gulp-jshint": "^1.8.5",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/acauamontiel/mantis-js.git"
+  },
+  "keywords": [
+    "js",
+    "dom"
+  ],
+  "author": "Acauã Montiel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acauamontiel/mantis-js/issues"
+  },
+  "homepage": "https://github.com/acauamontiel/mantis-js"
+}
