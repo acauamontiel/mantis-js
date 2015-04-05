@@ -1,6 +1,8 @@
 Mantis.js
 =========
 
+![Mantis.js](logo.png)
+
 Mantis.js is one of the smallest and simplest JavaScript libraries for modern browsers, but with the most essential and useful functionality with an API similar to jQuery and Zepto.js.
 
 
