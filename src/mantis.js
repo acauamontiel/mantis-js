@@ -21,6 +21,7 @@
 
 	//= include ./core.js
 	//= include ./utils.js
+	//= include ./css.js
 
 	return $;
 });

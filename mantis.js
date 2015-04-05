@@ -23,7 +23,6 @@
 	var $ = function(selector, context) {
 		return new Mantis.fn.init(selector, context);
 	};
-	$.fn = {};
 
 	function Mantis(nodes) {
 		var i;
@@ -98,6 +97,28 @@
 		mapOne: function(callback) {
 			var results = this.map(callback);
 			return results.length > 1 ? results : results[0];
+		}
+	});
+	/*
+	 * Mantis.js
+	 * CSS - src/css.js
+	 */
+	Mantis.extend({
+		css: function(prop, value) {
+			if (typeof prop === 'object') {
+				return this.each(function() {
+					var key;
+					for (key in prop) {
+						this.style[key] = prop[key];
+					}
+				});
+			} else if (value) {
+				return this.each(function() {
+					this.style[prop] = value;
+				});
+			} else {
+				return getComputedStyle(this[0], null).getPropertyValue(prop);
+			}
 		}
 	});
 	return $;

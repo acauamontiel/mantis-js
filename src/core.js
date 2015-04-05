@@ -7,8 +7,6 @@ var $ = function (selector, context) {
 	return new Mantis.fn.init(selector, context);
 };
 
-$.fn = {};
-
 function Mantis (nodes) {
 	var i;
 
