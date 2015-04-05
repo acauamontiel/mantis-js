@@ -41,7 +41,7 @@ gulp.task('concat', function() {
 		.pipe(include())
 		.pipe(prettify({
 			indent_with_tabs  : true,
-			preserve_newlines : true,
+			preserve_newlines : false,
 			end_with_newline  : true
 		}))
 		.pipe(gulp.dest('./'));
