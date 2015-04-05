@@ -2,7 +2,7 @@
  * Mantis.js
  * http://mantisjs.com
  *
- * Copyright 2013 - 2015 Acaua Montiel
+ * Copyright 2013 - 2015 Acaua Montiel (@acauamontiel)
  * Released under the MIT license (http://acaua.mit-license.org)
  */
 
@@ -21,5 +21,5 @@
 
 	//= include ./core.js
 
-	return Mantis;
+	return $;
 });
