@@ -20,6 +20,7 @@
 	'use strict';
 
 	//= include ./core.js
+	//= include ./utils.js
 
 	return $;
 });

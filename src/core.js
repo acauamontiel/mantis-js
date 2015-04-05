@@ -9,24 +9,6 @@ var $ = function (selector, context) {
 
 $.fn = {};
 
-$.extend = function (target, source) {
-	var p;
-
-	for (p in source) {
-		try {
-			if (source[p].constructor === Object) {
-				target[p] = $.extend(target[p], source[p]);
-			} else {
-				target[p] = source[p];
-			}
-		} catch(e) {
-			target[p] = source[p];
-		}
-	}
-
-	return target;
-};
-
 function Mantis (nodes) {
 	var i;
 
@@ -73,7 +55,3 @@ Mantis.fn.init = function (selector, context) {
 };
 
 Mantis.fn.init.prototype = Mantis.fn;
-
-Mantis.extend = Mantis.fn.extend = function (obj) {
-	return $.extend(Mantis.fn, obj);
-};
