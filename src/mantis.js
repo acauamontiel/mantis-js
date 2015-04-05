@@ -22,6 +22,7 @@
 	//= include ./core.js
 	//= include ./utils.js
 	//= include ./css.js
+	//= include ./attributes.js
 
 	return $;
 });
