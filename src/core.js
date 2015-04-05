@@ -23,8 +23,7 @@ Mantis.fn = Mantis.prototype = {
 	constructor: Mantis,
 	version: '0.0.0',
 	selector: '',
-	length: 0,
-	__proto__: []
+	length: 0
 };
 
 $.fn = Mantis.fn;

@@ -37,8 +37,7 @@
 		constructor: Mantis,
 		version: '0.0.0',
 		selector: '',
-		length: 0,
-		__proto__: []
+		length: 0
 	};
 	$.fn = Mantis.fn;
 	Mantis.fn.init = function(selector, context) {
