@@ -10,7 +10,6 @@
   "quotmark": "single",
   "undef": true,
   "strict": true,
-  "maxlen": 80,
   "debug": true,
   "eqnull": true,
   "browser": true,
