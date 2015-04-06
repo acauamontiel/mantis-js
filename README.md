@@ -3,7 +3,7 @@ Mantis.js
 
 ![Mantis.js](logo.png)
 
-Mantis.js is probably the simplest and lightest weight JavaScript library for modern browsers. It has the most essential and useful features like DOM traversal and manipulation, event handling, Ajax, and more with a similar API to jQuery and Zepto.js.
+[Mantis.js][website-mantisjs] is probably the simplest and lightest weight JavaScript library for modern browsers. It has the most essential and useful features like DOM traversal and manipulation, event handling, Ajax, and more with a similar API to jQuery and Zepto.js.
 
 
 Usage
@@ -26,9 +26,25 @@ Browser Support
 Latest ✔ | Latest ✔ | 9+ ✔ | 6.1+ ✔ |
 
 
+Donating
+--------
+
+Support this project and [others by acauamontiel][github-acauamontiel] via [gratipay][gratipay-acauamontiel].
+
+[![Support via Gratipay][gratipay]][gratipay-acauamontiel]
+
+
 License
 -------
 
 © 2013 - 2015 Acauã Montiel
 
-[MIT License](http://acaua.mit-license.org/)
+[MIT License][mit-acauamontiel]
+
+
+[website-mantisjs]: http://mantisjs.com/
+[website-acauamontiel]: http://acauamontiel.com.br/
+[github-acauamontiel]: https://github.com/acauamontiel/
+[mit-acauamontiel]: http://acaua.mit-license.org/
+[gratipay-acauamontiel]: https://gratipay.com/acauamontiel/
+[gratipay]: https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.svg
