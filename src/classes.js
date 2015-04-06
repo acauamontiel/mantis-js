@@ -73,5 +73,19 @@ Mantis.extend({
 		}
 
 		return false;
+	},
+
+	toggleClass: function (value) {
+		var v = value.split(' ');
+
+		return this.each(function () {
+			var $this = $(this),
+				i;
+
+			for (i = 0; i < v.length; i++) {
+				$this[($this.hasClass(v[i])) ?
+					'removeClass' : 'addClass'](v[i]);
+			}
+		});
 	}
 });
