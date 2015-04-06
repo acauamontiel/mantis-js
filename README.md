@@ -3,13 +3,7 @@ Mantis.js
 
 ![Mantis.js](logo.png)
 
-Mantis.js is one of the smallest and simplest JavaScript libraries for modern browsers, but with the most essential and useful functionality with an API similar to jQuery and Zepto.js.
-
-
-Browsers compatibility
-----------------------
-
-Mantis.js supports **IE9+** and the others real browsers, both desktop and mobile.
+Mantis.js is probably the simplest and lightest weight JavaScript library for modern browsers. It has the most essential and useful features like DOM traversal and manipulation, event handling, Ajax, and more with a similar API to jQuery and Zepto.js.
 
 
 Usage
@@ -24,10 +18,12 @@ Include Mantis.js with a script tag near the end of your page:
 A CDN will be available soon.
 
 
-Documentation
--------------
+Browser Support
+---------------
 
-This documentation is still incomplete, but you can see it developing through [this link](/docs/README.md).
+![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png)
+--- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 9+ ✔ | 6.1+ ✔ |
 
 
 License
