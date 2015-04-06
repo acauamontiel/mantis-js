@@ -48,5 +48,30 @@ Mantis.extend({
 				this.className = c.replace(/^\s+|\s+$/g, '');
 			});
 		}
+	},
+
+	hasClass: function (value) {
+		var v = value.split(' '),
+			contains,
+			i;
+
+		if (this[0].classList) {
+			contains = function (v) {
+				return this.classList.contains(v);
+			};
+		} else {
+			contains = function (v) {
+				var c = ' ' + this.className.replace(/[\t\r\n]/g, ' ') + ' ';
+				return (c.indexOf(' ' + v + ' ') >= 0);
+			};
+		}
+
+		for (i = 0; i < v.length; i++) {
+			if (contains.call(this[0], v[i])) {
+				return true;
+			}
+		}
+
+		return false;
 	}
 });
