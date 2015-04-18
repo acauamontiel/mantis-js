@@ -20,6 +20,32 @@ Include Mantis.js with a script tag near the end of your page:
 A CDN will be available soon.
 
 
+API Methods
+-----------
+
+List of all the methods currently working
+
+* [x] Mantis()
+* [x] Mantis.extend()
+* [x] Mantis.fn
+* [x] Mantis.fn.addClass()
+* [x] Mantis.fn.after()
+* [x] Mantis.fn.append()
+* [x] Mantis.fn.attr()
+* [x] Mantis.fn.before()
+* [x] Mantis.fn.css()
+* [x] Mantis.fn.each()
+* [x] Mantis.fn.extend()
+* [x] Mantis.fn.hasAttr()
+* [x] Mantis.fn.hasClass()
+* [x] Mantis.fn.html()
+* [x] Mantis.fn.map()
+* [x] Mantis.fn.prepend()
+* [x] Mantis.fn.removeAttr()
+* [x] Mantis.fn.removeClass()
+* [x] Mantis.fn.toggleClass()
+
+
 Browser Support
 ---------------
 
