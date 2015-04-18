@@ -267,6 +267,21 @@
 					}
 				});
 			}
+		},
+		prepend: function(value) {
+			var length;
+			if (typeof value === 'string') {
+				return this.each(function() {
+					this.insertAdjacentHTML('afterbegin', value);
+				});
+			} else if (value.constructor === Mantis) {
+				length = value.length;
+				return this.each(function() {
+					while (length--) {
+						this.insertBefore(value[length], this.firstChild);
+					}
+				});
+			}
 		}
 	});
 	return $;
