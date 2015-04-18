@@ -24,6 +24,7 @@
 	//= include ./attributes.js
 	//= include ./css.js
 	//= include ./classes.js
+	//= include ./manipulation.js
 
 	return $;
 });
