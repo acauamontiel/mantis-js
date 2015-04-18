@@ -254,16 +254,15 @@
 			}
 		},
 		append: function(value) {
-			var length;
+			var i;
 			if (typeof value === 'string') {
 				return this.each(function() {
 					this.insertAdjacentHTML('beforeend', value);
 				});
 			} else if (value.constructor === Mantis) {
-				length = value.length;
 				return this.each(function() {
-					while (length--) {
-						this.appendChild(value[length]);
+					for (i = 0; i < value.length; i++) {
+						this.appendChild(value[i]);
 					}
 				});
 			}
@@ -284,16 +283,15 @@
 			}
 		},
 		before: function(value) {
-			var length;
+			var i;
 			if (typeof value === 'string') {
 				return this.each(function() {
 					this.insertAdjacentHTML('beforebegin', value);
 				});
 			} else if (value.constructor === Mantis) {
-				length = value.length;
 				return this.each(function() {
-					while (length--) {
-						this.parentNode.insertBefore(value[length], this);
+					for (i = 0; i < value.length; i++) {
+						this.parentNode.insertBefore(value[i], this);
 					}
 				});
 			}
