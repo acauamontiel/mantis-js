@@ -3,9 +3,16 @@
  * Core - src/core.js
  */
 
-var $ = function (selector, context) {
-	return new Mantis.fn.init(selector, context);
-};
+var _Mantis,
+	_$,
+	$ = function (selector, context) {
+		return new Mantis.fn.init(selector, context);
+	};
+
+if (window) {
+	_Mantis = window.Mantis;
+	_$ = window.$;
+}
 
 function Mantis (nodes) {
 	var i;

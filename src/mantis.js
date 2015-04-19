@@ -14,7 +14,7 @@
 	} else if (typeof exports === 'object') {
 		module.exports = factory();
 	} else {
-		root.Mantis = factory();
+		root.Mantis = root.$ = factory();
 	}
 })(this, function () {
 	'use strict';
@@ -25,6 +25,18 @@
 	//= include ./css.js
 	//= include ./classes.js
 	//= include ./manipulation.js
+
+	$.noConflict = function (deep) {
+		if (window.$ === $) {
+			window.$ = _$;
+		}
+
+		if (deep && window.Mantis === $) {
+			window.Mantis = _Mantis;
+		}
+
+		return $;
+	};
 
 	return $;
 });
