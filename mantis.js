@@ -92,10 +92,6 @@
 				results.push(callback.call(this[i], i, this[i]));
 			}
 			return results;
-		},
-		mapOne: function(callback) {
-			var results = this.map(callback);
-			return results.length > 1 ? results : results[0];
 		}
 	});
 	/*
