@@ -28,6 +28,7 @@ List of all the methods currently working
 * [x] Mantis()
 * [x] Mantis.extend()
 * [x] Mantis.noConflict()
+* [x] Mantis.type()
 * [x] Mantis.fn
 * [x] Mantis.fn.addClass()
 * [x] Mantis.fn.after()

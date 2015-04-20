@@ -20,11 +20,13 @@
 	 * Mantis.js
 	 * Core - src/core.js
 	 */
-	var _Mantis,
+	var $ = function(selector, context) {
+		return new Mantis.fn.init(selector, context);
+	},
 		_$,
-		$ = function(selector, context) {
-			return new Mantis.fn.init(selector, context);
-		};
+		_Mantis,
+		types = 'Boolean Number String Function Array Date RegExp Object Error'.split(' '),
+		class2type = {};
 	if (window) {
 		_Mantis = window.Mantis;
 		_$ = window.$;
@@ -77,6 +79,19 @@
 	 * Mantis.js
 	 * Utils - src/utils.js
 	 */
+	for (var i = 0; types.length > i; i++) {
+		class2type['[object ' + types[i] + ']'] = types[i].toLowerCase();
+	}
+	$.type = function(obj) {
+		if (obj == null) {
+			return obj + '';
+		}
+		if (typeof obj === 'object' || typeof obj === 'function') {
+			return class2type[class2type.toString.call(obj)] || 'object';
+		} else {
+			return typeof obj;
+		}
+	};
 	$.extend = function(target, source) {
 		var p;
 		for (p in source) {

@@ -3,11 +3,13 @@
  * Core - src/core.js
  */
 
-var _Mantis,
-	_$,
-	$ = function (selector, context) {
+var $ = function (selector, context) {
 		return new Mantis.fn.init(selector, context);
-	};
+	},
+	_$,
+	_Mantis,
+	types = 'Boolean Number String Function Array Date RegExp Object Error'.split(' '),
+	class2type = {};
 
 if (window) {
 	_Mantis = window.Mantis;

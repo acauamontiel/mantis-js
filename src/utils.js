@@ -3,6 +3,22 @@
  * Utils - src/utils.js
  */
 
+for (var i = 0; types.length > i; i++) {
+	class2type['[object ' + types[i] + ']' ] = types[i].toLowerCase();
+}
+
+$.type = function (obj) {
+	if (obj == null) {
+		return obj + '';
+	}
+
+	if (typeof obj === 'object' || typeof obj === 'function') {
+		return class2type[class2type.toString.call(obj)] || 'object';
+	} else {
+		return typeof obj;
+	}
+};
+
 $.extend = function (target, source) {
 	var p;
 
