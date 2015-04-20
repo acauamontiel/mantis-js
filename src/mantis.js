@@ -26,17 +26,5 @@
 	//= include ./classes.js
 	//= include ./manipulation.js
 
-	$.noConflict = function (deep) {
-		if (window.$ === $) {
-			window.$ = _$;
-		}
-
-		if (deep && window.Mantis === $) {
-			window.Mantis = _Mantis;
-		}
-
-		return $;
-	};
-
 	return $;
 });

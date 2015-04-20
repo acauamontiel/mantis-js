@@ -28,6 +28,15 @@
 	if (window) {
 		_Mantis = window.Mantis;
 		_$ = window.$;
+		$.noConflict = function(deep) {
+			if (window.$ === $) {
+				window.$ = _$;
+			}
+			if (deep && window.Mantis === $) {
+				window.Mantis = _Mantis;
+			}
+			return $;
+		};
 	}
 
 	function Mantis(nodes) {
@@ -314,14 +323,5 @@
 			}
 		}
 	});
-	$.noConflict = function(deep) {
-		if (window.$ === $) {
-			window.$ = _$;
-		}
-		if (deep && window.Mantis === $) {
-			window.Mantis = _Mantis;
-		}
-		return $;
-	};
 	return $;
 });
