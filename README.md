@@ -3,7 +3,9 @@ Mantis.js
 
 [![Join the chat at https://gitter.im/acauamontiel/mantis-js](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/acauamontiel/mantis-js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-![Mantis.js](logo.png)
+<p align="center">
+  <img title="Mantis.js" src='logo.png' />
+</p>
 
 [Mantis.js][website-mantisjs] is probably the simplest and lightest weight JavaScript library for modern browsers. It has the most essential and useful features like DOM traversal and manipulation, event handling, Ajax, and more with a similar API to jQuery and Zepto.js.
 
