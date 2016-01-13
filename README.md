@@ -3,6 +3,9 @@ Mantis.js
 
 [![Join the chat at https://gitter.im/acauamontiel/mantis-js](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/acauamontiel/mantis-js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[![Bower version](https://badge.fury.io/bo/mantis-js.svg)](http://badge.fury.io/bo/mantis-js)
+[![npm version](https://badge.fury.io/js/mantis-js.svg)](http://badge.fury.io/js/mantis-js)
+
 <p align="center">
   <img title="Mantis.js" src='logo.png' />
 </p>
@@ -29,6 +32,7 @@ List of all the methods currently working
 
 * [x] Mantis()
 * [x] Mantis.extend()
+* [x] Mantis.map()
 * [x] Mantis.noConflict()
 * [x] Mantis.type()
 * [x] Mantis.fn
@@ -69,7 +73,7 @@ Support this project and [others by acauamontiel][github-acauamontiel] via [grat
 License
 -------
 
-© 2013 - 2015 Acauã Montiel
+© 2013 - 2016 Acauã Montiel
 
 [MIT License][mit-acauamontiel]
 
