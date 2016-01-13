@@ -31,6 +31,8 @@ if (window) {
 function Mantis (nodes) {
 	var i;
 
+	nodes = nodes || [];
+
 	for (i = 0; i < nodes.length; i++) {
 		this[i] = nodes[i];
 	}

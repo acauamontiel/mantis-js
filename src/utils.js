@@ -3,6 +3,41 @@
  * Utils - src/utils.js
  */
 
+function likeArray(obj) {
+	return typeof obj.length === 'number';
+}
+
+function flatten(array) {
+	return array.length > 0 ? [].concat.apply([], array) : array;
+}
+
+$.map = function (elements, callback) {
+	var results = [],
+		result,
+		key,
+		i;
+
+	if (likeArray(elements)) {
+		for (i = 0; i < elements.length; i++) {
+			result = callback(elements[i], i);
+
+			if (result != null) {
+				results.push(result);
+			}
+		}
+	} else {
+		for (key in elements) {
+			result = callback(elements[key], key);
+
+			if (result != null) {
+				results.push(result);
+			}
+		}
+	}
+
+	return flatten(results);
+};
+
 for (var i = 0; types.length > i; i++) {
 	class2type['[object ' + types[i] + ']' ] = types[i].toLowerCase();
 }
@@ -43,18 +78,12 @@ Mantis.extend = Mantis.fn.extend = function (obj) {
 
 Mantis.extend({
 	each: function (callback) {
-		this.map(callback);
-		return this;
+		return this.map(callback);
 	},
 
 	map: function (callback) {
-		var results = [],
-			i;
-
-		for (i = 0; i < this.length; i++) {
-			results.push(callback.call(this[i], i, this[i]));
-		}
-
-		return results;
+		return $.map(this, function(element, i) {
+			return callback.call(element, i, element);
+		});
 	}
 });
