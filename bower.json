@@ -1,32 +1,37 @@
 {
-  "name": "mantis-js",
-  "description": "JavaScript library for DOM manipulation",
-  "main": "mantis.js",
-  "version": "0.20.0",
-  "authors": [
-    "Acauã Montiel <contato@acauamontiel.com.br>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "js",
-    "dom"
-  ],
-  "homepage": "http://mantisjs.com",
-  "moduleType": [
-    "amd",
-    "es6",
-    "globals",
-    "node"
-  ],
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests",
-    "*.json",
-    "*.md",
-    "*.png",
-    "gulpfile.js"
-  ]
+	"name": "mantis-js",
+	"description": "JavaScript library for DOM manipulation",
+	"main": "mantis.js",
+	"authors": [
+		"Acauã Montiel <contato@acauamontiel.com.br>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"js",
+		"dom"
+	],
+	"homepage": "http://mantisjs.com",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:mantisjs/mantis-js.git"
+	},
+	"moduleType": [
+		"amd",
+		"es6",
+		"globals",
+		"node"
+	],
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests",
+		"playground",
+		"src",
+		"*.json",
+		"*.md",
+		"*.png",
+		"gulpfile.js"
+	]
 }
