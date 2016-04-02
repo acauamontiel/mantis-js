@@ -17,8 +17,8 @@ Mantis.extend({
 			return this.each(function() {
 				this.style[prop] = value;
 			});
-		} else {
-			return getComputedStyle(this[0], null).getPropertyValue(prop);
 		}
+
+		return getComputedStyle(this[0], null).getPropertyValue(prop);
 	}
 });
